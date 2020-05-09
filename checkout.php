@@ -9,7 +9,7 @@ include("extnd.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Checkout example for Bootstrap</title>
+    <title>FashionPoint:Checkout</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/checkout/">
 
