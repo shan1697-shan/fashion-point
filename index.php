@@ -72,22 +72,22 @@ include("extnd.php");
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="images/tailor.png" class="bd-placeholder-img rounded-circle" width="140" height="140"><title>Placeholder</title>        
         <h2>Tailoring</h2>
         <p>Fashion Point is an amazing portal which provides you the feature of tailor at your door-step.</p>
-        <p><a class="btn btn-secondary" href="abot.php" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="booktailor.php" role="button">Book Tailor &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="images/self.png" class="bd-placeholder-img rounded-circle" width="140" height="140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
         <h2>Self-Desing</h2>
         <p>Fashion Point is an amazing portal which provides you the feature of ordering products with your choosen design on it.</p>
-        <p><a class="btn btn-secondary" href="about.php" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="yourdesign.php" role="button">Proceed &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="images/cloth.png" class="bd-placeholder-img rounded-circle" width="140" height="140" ><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/>
         <h2>Cloths</h2>
         <p>Fashion Point provides of wide varirty of ready-made cloths for you to be comtable and fitting can also be done before delivery or after delivery as per costumer's choice.</p>
-        <p><a class="btn btn-secondary" href="about.php" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="allcloth.php" role="button">View Cloths &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
