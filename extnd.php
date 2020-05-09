@@ -74,6 +74,7 @@ include("checksession.php");
           <a class="dropdown-item" href="child.php">Children</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="yourdesign.php">Your Design</a>
+          <a class="dropdown-item" href="booktailor.php">Book Tailor</a>
         </div>
       </li>
       <form class="form-inline mt-2 mt-md-0 mx-2" action="search.php" method="POST">
