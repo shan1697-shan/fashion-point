@@ -17,7 +17,60 @@ include("header.php");
 		<h3>Orders:</h3>
 		<?php 
 		include("dbconnect.php");
-		$sql = "SELECT * from orders";
+		$sql = "SELECT * from orders WHERE allitems='Tailor'";
+		$result = mysqli_query($con,$sql);
+		if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        
+  	?>
+		<div class="row my-4">
+			<div class="col-sm-1">
+			<ul class="list-group">
+			  <li class="list-group-item"><h5><?php echo $row["id"];?></h5></li>
+			</ul>
+			</div>
+			<div class="col-sm-2">
+				<ul class="list-group">
+			  <li class="list-group-item"><h5>Name: </h5><?php echo $row["fname"]; echo " "; echo $row['lname'];?></li>
+			</ul>
+			</div>
+			<div class="col-sm-7" style="margin-bottom: 10px;">
+				<ul class="list-group">
+			  <li class="list-group-item"><h5>Items: </h5><?php echo $row["allitems"];?></li>
+			</ul>
+			</div>
+			<div class="col-sm-2">
+				<ul class="list-group">
+			  <li class="list-group-item"><h5>Amount: </h5>₹ <?php echo $row["amount"];?></li>
+			</ul>
+			</div>
+			<div class="col-sm-1"></div>
+			<div class="col-sm-6">
+				<ul class="list-group">
+			  <li class="list-group-item"><h5>Address: </h5><?php echo $row["address"]; echo ","; echo $row["state"]; echo ","; echo $row["country"]; echo " "; echo $row["zip"]; ?></li>
+			</ul>
+			</div>
+			<div class="col-sm-4">
+				<ul class="list-group">
+			  <li class="list-group-item"><h5>Payment Mode: </h5><?php echo $row["paymode"];?></li>
+			</ul>
+			</div>
+			
+		</div>
+		<?php
+		  }
+	} else {
+    echo "0 results";
+	}
+	
+	?>
+	</div>
+	<div class="container my-4">
+		<h3>Tailor Requests:</h3>
+		<?php 
+		include("dbconnect.php");
+		$sql = "SELECT * from orders WHERE allitems='Tailor'";
 		$result = mysqli_query($con,$sql);
 		if (mysqli_num_rows($result) > 0) {
     // output data of each row
