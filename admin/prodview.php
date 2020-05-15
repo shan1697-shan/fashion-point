@@ -52,7 +52,9 @@ include("header.php");
 			</div>
 			<div class="col-sm-2">
 				<form method="POST" action="#">
-					<input type="button" class="btn btn-danger" name="delete" value="Delete">
+					<input type="hidden" name="identity" value='<?php echo $row["id"];?>'>
+					<input type="hidden" name="nam" value='<?php echo $row["name"];?>'>
+					<button type="submit" class="btn btn-danger" name="delete">Delete</button>
 				</form>
 			</div>
 		</div>
@@ -61,21 +63,17 @@ include("header.php");
 	} else {
     echo "0 results";
 	}
-	if($_POST){
-    if(isset($_POST['delete'])){
-        delete();
-    }//elseif(isset($_GET['select'])){
-        //select();
-    //}
-	}
-
-    function delete()
-    {
-    	$delete1 =("DELETE FROM product WHERE id = '$id'");
-        $result = mysqli_query($con,$delete1) or die(mysqli_error());
-        
-	echo "record deleted";
-   
+        if(isset($_POST['delete'])){
+	 	$identity = $_POST['identity'];
+	 	$nam = $_POST['nam'];
+	 	$del  = "DELETE FROM product WHERE id=$identity";
+	 	if (mysqli_query($con,$del)) {
+	 		echo "Deleted ".$nam." from products";
+	 		echo "<script>window.location.replace('prodview.php');</script>";
+	 	}
+	 	else{
+	 		echo "<script>alert('Could not Deleted')</script>";
+	 	}
     }
 	?>
 	</div>
